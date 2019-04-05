@@ -1,0 +1,22 @@
+#holder {
+    display: inline-block;
+    margin: 0px;
+
+}
+input {
+    position: fixed;
+    top: 0;
+}
+.cell {
+    width: 8px;
+    height: 8px;
+    margin: 0px;
+    padding: 0px;
+    border-style: solid;
+    border-width: .05px;
+    float: left;
+}
+p{
+    margin: 0px;
+    padding: 0px;
+}

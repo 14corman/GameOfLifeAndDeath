@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>GOLAD game</title>
+	    <meta charset="utf-8" />
+        <script type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="scripts/game script.js"></script>
+        <link rel="stylesheet" type="text/css" href="/GameOfLifeWebsite/css/game.css" />
+    </head>
+    <body onload="setupGame();">
+        <div id="ending"></div>
+        <div id="gameBoard">
+            <div id="00" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="01" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="02" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="03" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="04" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="05" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="06" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="07" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="08" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="09" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div><br />
+            <div id="10" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="11" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="12" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="13" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="14" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="15" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="16" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="17" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="18" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="19" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div><br />
+            <div id="20" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="21" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="22" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="23" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="24" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="25" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="26" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="27" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="28" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="29" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div><br />
+            <div id="30" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="31" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="32" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="33" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="34" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="35" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="36" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="37" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="38" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="39" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div><br />
+            <div id="40" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="41" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="42" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="43" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="44" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="45" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="46" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="47" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="48" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="49" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div><br />
+            <div id="50" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="51" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="52" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="53" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="54" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="55" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="56" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="57" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="58" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="59" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div><br />
+            <div id="60" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="61" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="62" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="63" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="64" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="65" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="66" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="67" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="68" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="69" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div><br />
+            <div id="70" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="71" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="72" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="73" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="74" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="75" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="76" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="77" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="78" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="79" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div><br />
+            <div id="80" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="81" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="82" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="83" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="84" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="85" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="86" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="87" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="88" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="89" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div><br />
+            <div id="90" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="91" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="92" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="93" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="94" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="95" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="96" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="97" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="98" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+            <div id="99" class="buttonOriginal" onclick="makeMove(this);">
+                <div class="innerButtonOriginal">
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block; height: 800px; width: 417px; margin: 0px; z-index: 1; left: 810px; top: 15px; position: absolute;">
+            <input id="Button1" type="button" onclick="applyMove();" value="Submit move" />
+            <div style="height: 33%; width: 100%;">
+                <div class="player" style="background-color: #ef0000">
+                    <p class="player">Player 1</p>
+                    <p id="1" class="player"></p>
+                    <br />
+                    <p id="player1" class="player">Cells=</p>
+                </div>
+                <div class="player" style="background-color: #0065ff">
+                    <p class="player">Player 2</p>
+                    <p id="2" class="player"></p>
+                    <br />
+                    <p id="player2" class="player">Cells=</p>
+                </div>
+            </div>
+            <input id="Button2" type="button" onclick="GOLADUndo();" value="Undo move" />
+        </div>
+</body>
+</html>

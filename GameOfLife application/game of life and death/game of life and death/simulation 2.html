@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
+    <style>
+        #holder {
+            height: 100%;
+            margin: 0px;
+            width: 100%;
+        }
+        .cell {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin: 0px;
+            padding: 0px;
+            border-style: solid;
+            border-width: .05px;
+        }
+        br {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body onload="start();">
+    <script>
+        function start()
+        {
+            var holder = document.getElementById("holder");
+
+            for(var i = 0; i < 100;)
+            {
+                for(var j = 0; j < 100;)
+                {
+                    var div = document.createElement("div");
+                    div.className = "cell";
+                    div.id = i.toString() + j.toString();
+                    holder.appendChild(div);
+                    j++;
+                }
+                i++;
+            }
+
+            $.get('/GameOfLifeWebsite/simulation?setup=true', function (data) {
+                window.setInterval(function () { getGrid(); }, 1000);
+                showGrid(data);
+            }, 'json');
+        }
+
+        function showGrid(grid)
+        {
+            for (var i = 0; i < 100;)
+            {
+                for (var j = 0; j < 100;)
+                {
+                    console.log($("#" + i.toString() + j.toString()));
+                    if (grid["grid"][i][j] === 1)
+                        $("#" + i.toString() + j.toString())[0].style.backgroundColor = "red";
+                    else
+                        $("#" + i.toString() + j.toString())[0].style.backgroundColor = "transparent";
+
+                    j++;
+                }
+                i++;
+            }
+        }
+
+        function getGrid() {
+            $.get('/GameOfLifeWebsite/simulation', function (data) {
+                showGrid(data);
+            }, 'json');
+        }
+    </script>
+    <div id="holder">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" docBase="D:\GameOfLifeWebsite\build\web" path="/GameOfLifeWebsite">
+  <Resource auth="Container" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" maxIdle="30" maxTotal="100" maxWaitMillis="10000" name="jdbc/TestDB" password="1EchoPapaAugust$" type="javax.sql.DataSource" url="jdbc:sqlserver://srv-david:8133" username="nsfedwardsrw"/>
+</Context>

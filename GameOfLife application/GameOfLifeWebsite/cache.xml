@@ -1,0 +1,38 @@
+<config 
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+	xmlns='http://www.ehcache.org/v3'
+	xmlns:jsr107='http://www.ehcache.org/v3/jsr107'
+	xsi:schemaLocation="
+		http://www.ehcache.org/v3 http://www.ehcache.org/schema/ehcache-core.xsd
+		http://www.ehcache.org/v3/jsr107 http://www.ehcache.org/schema/ehcache-107-ext-3.0.xsd">
+
+	<persistence directory="TempNodeStore" />
+	
+	<cache alias="default"> 
+		<key-type>java.lang.String</key-type> 
+		<value-type>edu.malone.edwards.admea.nodeUtils.Node</value-type> 
+		<expiry>
+			<tti unit="seconds">30</tti>
+		</expiry>
+		<loader-writer>
+			<class>edu.malone.edwards.admea.nodeUtils.Nodes</class>
+		</loader-writer>
+		<listeners>
+			<listener>
+				<class>edu.malone.edwards.admea.NodeListener</class>
+				<event-firing-mode>SYNCHRONOUS</event-firing-mode>
+				<event-ordering-mode>ORDERED</event-ordering-mode>
+				<events-to-fire-on>CREATED</events-to-fire-on>
+				<events-to-fire-on>REMOVED</events-to-fire-on>
+				<events-to-fire-on>EXPIRED</events-to-fire-on>
+				<events-to-fire-on>EVICTED</events-to-fire-on>
+				<events-to-fire-on>UPDATED</events-to-fire-on>
+			</listener>
+		</listeners>
+		<resources>
+			<heap unit="entries">2000</heap> 
+			<offheap unit="MB">20</offheap> 
+			<disk unit="GB" persistent="true">2</disk>
+		</resources>
+	</cache>
+</config>

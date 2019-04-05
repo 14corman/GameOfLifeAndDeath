@@ -1,0 +1,130 @@
+﻿<%-- 
+    Document   : game
+    Created on : Mar 4, 2017, 6:56:31 AM
+    Author     : Cory Edwards
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GOLAD game</title>
+	<meta charset="utf-8" />
+        <link rel="icon" href="/GameOfLifeWebsite/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/GameOfLifeWebsite/favicon.ico" type="image/x-icon"> 
+        <link rel="stylesheet" type="text/css" href="/GameOfLifeWebsite/css/game.css" />
+        <script type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="scripts/game script.js"></script>
+        <style>
+            ﻿#gameBoard {
+    width: 800px;
+    height: 800px;
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+}
+div.out {
+    border-style: solid;
+    border-width: 1px;
+    padding: 0px;
+    display:inline-block;
+    color:#444;
+    cursor:pointer;
+    width: 9%;
+    height: 100%;
+    float: left;
+}
+div.in {
+    color:#444;
+    cursor:pointer;
+    width: 40%;
+    height: 40%;
+    margin-top: 30%;
+    margin-left: 30%;
+}
+#menuContainer {
+    display: inline-block;
+    height: 800px;
+    width: 417px;
+    margin: 0px;
+    z-index: 1;
+    left: 810px;
+    top: 15px;
+    position: absolute;
+}
+p.cells{
+    height: 9%;
+    margin: 0px;
+    padding: 0px;
+}
+input {
+    width: 100%;
+    height: 33%;
+    font-size: 200%;
+    cursor:pointer;
+    z-index: 999;
+}
+.playerTile {
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+    padding: 0px;
+    float: left;
+}
+.player {
+    width: 99%;
+    height: 100%;
+    display: inline-block;
+    padding: 0px;
+    float: left;
+    margin: 0px;
+}
+p.player {
+    font-size: 110%;
+    height: 30%;
+    display: inline-block;
+    float : left;
+    padding: 0px;
+    margin: 0px;
+            }
+#ending {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: white;
+    font-size: 300%;
+}
+        </style>
+    </head>
+    <body onload="setupGame();">
+        <div id="ending"></div>
+        <div id="gameBoard"></div>
+        <div id="menuContainer">
+            <input id="Button1" type="button" onclick="applyMove();" value="Submit move" />
+            <div style="height: 24%; width: 100%;">
+                <div class="playerTile" style="background-color: #ef0000">
+                    <p class="player">Player 1</p>
+                    <p id="1" class="player" style="font-size: 200%"></p>
+                    <br />
+                    <p id="player1" class="player">Cells=</p>
+                </div>
+                <div class="playerTile" style="background-color: #0065ff">
+                    <p id="player2Name" class="player">Player 2</p>
+                    <p id="2" class="player" style="font-size: 200%"></p>
+                    <br />
+                    <p id="player2" class="player">Cells=</p>
+                </div>
+            </div>
+            <input id="Button2" type="button" onclick="GOLADUndo();" value="Undo move" />
+        </div>
+    </body>
+</html>
+

@@ -1,0 +1,35 @@
+﻿.auto-style1 {
+    font-size: large;
+}
+#player2 {
+    text-align: center;
+}
+#startGame {
+    margin-left: 52px;
+}
+.scores {
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+p {
+    margin: 0px;
+}
+ul {
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+h1 {
+    margin: 5px;
+}
+#contentDiv {
+    display: inline-block;
+    float: left;
+}
+#highScoresDiv {
+    display: inline-block;
+    float: left;
+    position: fixed;
+    text-align: right;
+    top: 0;
+}

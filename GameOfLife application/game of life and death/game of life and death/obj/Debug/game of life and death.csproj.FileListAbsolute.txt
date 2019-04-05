@@ -1,0 +1,33 @@
+E:\game of life and death\game of life and death\bin\ApplicationInsights.config
+E:\game of life and death\game of life and death\bin\roslyn\csc.exe
+E:\game of life and death\game of life and death\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\game of life and death\game of life and death\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\game of life and death\game of life and death\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\game of life and death\game of life and death\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\game of life and death\game of life and death\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\game of life and death\game of life and death\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\game of life and death\game of life and death\bin\roslyn\System.Collections.Immutable.dll
+E:\game of life and death\game of life and death\bin\roslyn\System.Reflection.Metadata.dll
+E:\game of life and death\game of life and death\bin\roslyn\vbc.exe
+E:\game of life and death\game of life and death\bin\roslyn\VBCSCompiler.exe
+E:\game of life and death\game of life and death\bin\roslyn\VBCSCompiler.exe.config
+E:\game of life and death\game of life and death\bin\game of life and death.dll.config
+E:\game of life and death\game of life and death\bin\game of life and death.dll
+E:\game of life and death\game of life and death\bin\game of life and death.pdb
+E:\game of life and death\game of life and death\bin\Microsoft.AI.Agent.Intercept.dll
+E:\game of life and death\game of life and death\bin\Microsoft.AI.DependencyCollector.dll
+E:\game of life and death\game of life and death\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\game of life and death\game of life and death\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\game of life and death\game of life and death\bin\Microsoft.AI.Web.dll
+E:\game of life and death\game of life and death\bin\Microsoft.AI.WindowsServer.dll
+E:\game of life and death\game of life and death\bin\Microsoft.ApplicationInsights.dll
+E:\game of life and death\game of life and death\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\game of life and death\game of life and death\bin\Microsoft.AI.DependencyCollector.xml
+E:\game of life and death\game of life and death\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\game of life and death\game of life and death\bin\Microsoft.AI.Web.xml
+E:\game of life and death\game of life and death\bin\Microsoft.AI.WindowsServer.xml
+E:\game of life and death\game of life and death\bin\Microsoft.ApplicationInsights.xml
+E:\game of life and death\game of life and death\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\game of life and death\game of life and death\obj\Debug\game of life and death.csprojResolveAssemblyReference.cache
+E:\game of life and death\game of life and death\obj\Debug\game of life and death.dll
+E:\game of life and death\game of life and death\obj\Debug\game of life and death.pdb
